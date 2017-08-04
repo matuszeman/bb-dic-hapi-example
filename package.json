@@ -1,0 +1,27 @@
+{
+  "name": "bb-dic-hapi-example",
+  "version": "0.1.0",
+  "description": "bb-dic HapiJS application example implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matuszeman/bb-dic-hapi-example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matuszeman/bb-dic-hapi-example/issues"
+  },
+  "homepage": "https://github.com/matuszeman/bb-dic-hapi-example#readme",
+  "dependencies": {
+    "@kapitchi/bb-dic": "^1.4.0",
+    "@kapitchi/bb-service": "^1.4.0",
+    "boom": "^5.2.0",
+    "config": "^1.26.1",
+    "hapi": "^16.5.2",
+    "joi": "^10.6.0"
+  }
+}
