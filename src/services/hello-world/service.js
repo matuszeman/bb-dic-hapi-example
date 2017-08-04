@@ -8,7 +8,7 @@ class HelloWorldService extends AbstractService {
     });
 
     return {
-      message: `hello world! By: ${params.name}`
+      message: `hello world! From: ${params.name}`
     };
   }
 
