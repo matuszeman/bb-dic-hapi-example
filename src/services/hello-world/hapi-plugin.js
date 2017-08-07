@@ -10,9 +10,6 @@ class HelloWorldHapiPlugin {
   }
 
   registerRoutes(server) {
-    /**
-     * http://localhost:8000/hello/plain?name=joe
-     */
     server.route({
       method: 'GET',
       path:'/hello/plain',
@@ -27,9 +24,6 @@ class HelloWorldHapiPlugin {
       }
     });
 
-    /**
-     * http://localhost:8000/hello/json?name=joe
-     */
     server.route({
       method: 'GET',
       path:'/hello/json',
@@ -44,9 +38,6 @@ class HelloWorldHapiPlugin {
       }
     });
 
-    /**
-     * http://localhost:8000/error/generic
-     */
     server.route({
       method: 'GET',
       path:'/error/generic',
@@ -57,9 +48,6 @@ class HelloWorldHapiPlugin {
       }
     });
 
-    /**
-     * http://localhost:8000/error/boom
-     */
     server.route({
       method: 'GET',
       path:'/error/boom',

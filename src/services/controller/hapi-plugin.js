@@ -1,3 +1,6 @@
+/**
+ * Route handlers are implemented as "controller action" methods
+ */
 class ControllerHapiPlugin {
   constructor(controllerHandler) {
     this.name = 'controller';
@@ -29,18 +32,12 @@ class ControllerHapiPlugin {
       handler: this.createHandler(this.controller.helloJson.bind(this.controller))
     });
 
-    /**
-     * http://localhost:8000/error/generic
-     */
     server.route({
       method: 'GET',
       path:'/controller/error/generic',
       handler: this.createHandler(this.controller.errorGeneric.bind(this.controller))
     });
 
-    /**
-     * http://localhost:8000/error/boom
-     */
     server.route({
       method: 'GET',
       path:'/controller/error/boom',
